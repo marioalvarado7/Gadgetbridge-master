@@ -1,0 +1,42 @@
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.appmanager.AppManagerActivity">
+
+    <LinearLayout
+        android:id="@+id/appmanager_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/appmanager_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".activities.appmanager.AppManagerActivity">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/charts_pagerTabStrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top" />
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@drawable/ic_add"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="10dp" />
+
+</android.widget.RelativeLayout>
